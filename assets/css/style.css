@@ -1,10 +1,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
 
-body{
+body {
   margin: 0;
-  padding: 0;
+  padding-top: 10px;
 }
 
 div#map {
-    height:500px;
+  height: 500px;
+}
+.hero-outer {
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#cover-image {
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background: url(../images/St1.jpg) no-repeat center center;
+  padding: 0;
+  margin: 0;
+}
+#cover-text {
+  font-size: 120%;
+  font-family: Oswald;
+  color: #ffffff;
+  background-color: rgba(38, 157, 236, 0.7);
+  padding: 20 50 30 15;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 360px;
+  right: 145px;
+  width: 220px;
+  height: 170px;
+}
+
+#cover-text p{
+    margin-top:1rem;
+}
+#weather-text {
+  position: absolute;
+  top: 260px;
+  left: 245px;
+  width: 120px;
  }
+
+input[type="text"],
+[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #215fc2;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom:20px;
+
+}
+
+input[type="submit"]:hover {
+  background-color: #051630;
+}
+
+
+.contact-Heading{
+    padding-top:20px;
+    margin-top: 25px;
+    margin-bottom:20px;
+}
+
+.center-form{
+    padding-top:10px;
+    margin:0 auto;
+    max-width: 70%;
+}
+
+@media(min-width:992px){
+      .center-form{
+        padding-top:30px;
+        min-height: 240px;
+        margin:0 auto;
+        max-width: 50%;
+    }
+}
