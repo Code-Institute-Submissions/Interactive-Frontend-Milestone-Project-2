@@ -1,43 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Stockholm Tour</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LwjhghfFcoX5t-2mIPdkRi8CV3jSfxU&callback=initMap&libraries=places&v=weekly"
-      defer
-    ></script>
-      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-     <script>
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-     </script>
-  
-  </head>
-  <body>
-    <header>
-      <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark"
-                style="background-color: #e3f2fd;"
-                >
-                <div class="navbar-toggler-right">
-                    <button
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Stockholm Tour</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LwjhghfFcoX5t-2mIPdkRi8CV3jSfxU&callback=initMap&libraries=places&v=weekly"
+		defer></script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<script>
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+	</script>
+</head>
+<body>
+	<header>
+		<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" style="background-color: #e3f2fd;">
+			<div class="navbar-toggler-right">
+				<button
                         class="navbar-toggler"
                         type="button"
                         data-toggle="collapse"
@@ -47,66 +32,52 @@
                         >
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                </div>
-                <a class="navbar-brand text-center" href="#">
-                   <span>Expore Stockholm</span>
-                </a>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <nav
-                        class="nav d-flex flex-column flex-md-row w-100 justify-content-end"
-                        >
-                        <a class="flex-fill text-center text-light nav-link active" href="#"
-                            >Home</a
-                            >
-                        <a class="flex-fill text-center text-light nav-link" href="explore.html"
-                            >Explore</a
-                            >
-                        <a class="flex-fill text-center text-light nav-link" href="contact.html"
-                            >Contact</a
-                            >
-                    </nav>
-                </div>
-            </nav>
-
-    </header>
-    <section class="hero-outer">
-            <div id="cover-image">
-            </div>
-            <div id="cover-text">
-               <p><em>Stockholm</em>, the capital of Sweden, encompasses 14 islands and more than 50 bridges on an extensive Baltic Sea archipelago. </p>
-            </div>
-            <div id="weather-text">
-                <a class="weatherwidget-io" href="https://forecast7.com/en/59d3318d07/stockholm/" data-label_1="STOCKHOLM" data-label_2="Current Weather" data-font="Roboto" data-icons="Climacons Animated" data-mode="Current" data-days="3" data-theme="weather_one" >STOCKHOLM Current Weather</a>
-            </div>
-           
-        </section>
-  
-    <section id="section-experience">
-        <div id="map"></div>
-    </section>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-        <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-      <script src="assets/js/maps.js"></script>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>   
-    <!--script async defer
+			</div>
+			<a class="navbar-brand text-center" href="index.html">
+				<span>Expore Stockholm</span>
+			</a>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<nav class="nav d-flex flex-column flex-md-row w-100 justify-content-end">
+					<a class="flex-fill text-center text-light nav-link active" href="index.html">Home</a>
+					<a class="flex-fill text-center text-light nav-link" href="explore.html">Explore</a>
+					<a class="flex-fill text-center text-light nav-link" href="contact.html">Contact</a>
+				</nav>
+			</div>
+		</nav>
+	</header>
+	<section class="hero-outer">
+		<div id="cover-image">
+		</div>
+		<div id="cover-text">
+			<p><em>Stockholm</em>, the capital of Sweden, encompasses 14 islands and more than 50 bridges on an
+				extensive Baltic Sea archipelago. </p>
+		</div>
+		<div id="weather-text">
+			<a class="weatherwidget-io" href="https://forecast7.com/en/59d3318d07/stockholm/" data-label_1="STOCKHOLM"
+				data-label_2="Current Weather" data-font="Roboto" data-icons="Climacons Animated" data-mode="Current"
+				data-days="3" data-theme="weather_one">STOCKHOLM Current Weather</a>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
+	<!--<script src="assets/js/maps.js"></script>
+	<script
+		src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+	</script>
+	<script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LwjhghfFcoX5t-2mIPdkRi8CV3jSfxU&callback=initMap">
     </script> 
      <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LwjhghfFcoX5t-2mIPdkRi8CV3jSfxU&callback=initMap&libraries=places&v=weekly"
       async defer
     ></script>-->
-  </body>
+</body>
+
 </html>
