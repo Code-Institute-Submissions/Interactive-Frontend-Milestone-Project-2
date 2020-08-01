@@ -21,63 +21,73 @@
       crossorigin="anonymous"
     />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LwjhghfFcoX5t-2mIPdkRi8CV3jSfxU&callback=initMap&libraries=places&v=weekly"
-      defer
-    ></script>
-      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-     
-
-  
+ 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   </head>
   <body>
     <header>
-      <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark"
-                style="background-color: #e3f2fd;"
-                >
-                <div class="navbar-toggler-right">
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarTogglerDemo01"
-                        aria-controls="navbarTogglerDemo01"
-                        aria-expanded="false"
-                        >
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <a class="navbar-brand text-center" href="index.html">
-                   <span>Expore Stockholm</span>
-                </a>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <nav
-                        class="nav d-flex flex-column flex-md-row w-100 justify-content-end"
-                        >
-                        <a class="flex-fill text-center text-light nav-link active" href="index.html"
-                            >Home</a
-                            >
-                        <a class="flex-fill text-center text-light nav-link" href="explore.html"
-                            >Explore</a
-                            >
-                        <a class="flex-fill text-center text-light nav-link" href="contact.html"
-                            >Contact</a
-                            >
-                    </nav>
-                </div>
-            </nav>
-
+      <nav
+        class="navbar fixed-top navbar-expand-md navbar-dark bg-dark"
+        style="background-color: #e3f2fd;"
+      >
+        <div class="navbar-toggler-right">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <a class="navbar-brand text-center" href="index.html">
+          <span>Expore Stockholm</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <nav
+            class="nav d-flex flex-column flex-md-row w-100 justify-content-end"
+          >
+            <a
+              class="flex-fill text-center text-light nav-link active"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="flex-fill text-center text-light nav-link"
+              href="explore.html"
+              >Explore</a
+            >
+            <a
+              class="flex-fill text-center text-light nav-link"
+              href="contact.html"
+              >Contact</a
+            >
+          </nav>
+        </div>
+      </nav>
     </header>
- 
     <section id="section-menu">
-     <button class="myButton"><i class="fas fa-utensils"></i> Food & Drinks </button>
-      <button class="myButton"><i class="fas fa-monument"></i> Culture & History </button>
-       <button class="myButton"><i class="fas fa-mountain"></i> Attraction </button>
-        <button class="myButton"><i class="fas fa-shopping-bag"></i> Shopping </button>
-        <button class="myButton"><i class="fas fa-city"></i> Everything </button>
-        <div id="map"></div>
+      <button class="myButton">
+        <i class="fas fa-utensils"></i> Food & Drinks
+      </button>
+      <button class="myButton">
+        <i class="fas fa-monument"></i> Culture & History
+      </button>
+      <button class="myButton">
+        <i class="fas fa-mountain"></i> Attraction
+      </button>
+      <button class="myButton">
+        <i class="fas fa-shopping-bag"></i> Shopping
+      </button>
+      <button class="myButton"><i class="fas fa-city"></i> Everything</button>
+      <div id="map"></div>
+     
+      
     </section>
-    
+  
+
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -88,19 +98,17 @@
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
-        <script
+    <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-      <script src="assets/js/maps.js"></script>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>   
-    <!--script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LwjhghfFcoX5t-2mIPdkRi8CV3jSfxU&callback=initMap">
-    </script> 
-     <script
+    <script src="assets/js/maps.js"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LwjhghfFcoX5t-2mIPdkRi8CV3jSfxU&callback=initMap&libraries=places&v=weekly"
-      async defer
-    ></script>-->
+      async
+      defer
+    ></script>
   </body>
 </html>
