@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<!--<html lang="en">
+<!--!DOCTYPE html>-->
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -20,15 +20,13 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-   
- 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
      <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LwjhghfFcoX5t-2mIPdkRi8CV3jSfxU&callback=initMap&libraries=places&v=weekly"
       async
       defer
     ></script>
-     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+     <link href="assets/css/mapstyle.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
@@ -75,28 +73,23 @@
       </nav>
     </header>
     <section id="section-menu">
-    <h3>Click the buttons to explore your interest</h3>
-      <button class="myButton">
-        <i class="fas fa-utensils"></i> Food & Drinks
-      </button>
-      <button class="myButton">
-        <i class="fas fa-monument"></i> Culture & History
-      </button>
-      <button class="myButton">
-        <i class="fas fa-mountain"></i> Attraction
-      </button>
-      <button class="myButton">
-        <i class="fas fa-shopping-bag"></i> Shopping
-      </button>
-      <button class="myButton"><i class="fas fa-city"></i> Everything</button>
-        <div id="map"></div>
-        <div id="right-panel">
-            <h2>Results</h2>
-            <ul id="places"></ul>
-            <button id="more">More results</button>
+    <div class="choice">
+    <a href="#map">Food</a>
+    </div>
+    <div class="choice"><a href="#map">History</a></div>
+    <div class="choice"><a href="#map">Attraction</a></div>
+    <div class="choice"><a href="#map">Shopping</a></div>
+    <div class="row">
+        <div class="col">
+             <div id="map"></div>
         </div>
-   
-    
+        <div class="col">
+            <div id="right-panel">
+                <h2>Results</h2>
+                <ul id="places"></ul>
+            </div>
+        </div>
+    </div>    
     </section>
    
 
@@ -120,8 +113,8 @@
     <script src="assets/js/places.js"></script>
   </body>
 </html>
--->
-<!DOCTYPE html>
+
+<!--<!DOCTYPE html>
 <html>
   <head>
     <title>Place Search Pagination</title>
@@ -142,4 +135,4 @@
       <button id="more">More results</button>
     </div>
   </body>
-</html>
+</html>-->

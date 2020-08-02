@@ -128,45 +128,22 @@ input[type="submit"]:hover {
  }
 }
 .section-contact{
-   background: url(../images/stockholm.jpg) no-repeat center center;
+    background: url(../images/stockholm.jpg) no-repeat center center;
+     -moz-background-size:100% 100%;
+    -webkit-background-size:100% 100%;
+    width: 100%;
+    height: auto;
 }
 
 label{
     color:#fff;
     background-color:rgba(38, 157, 236, 0.7);
 }
-.myButton {
-	box-shadow: 3px 4px 0px 0px #1564ad;
-	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
-	background-color:#79bbff;
-	border-radius:5px;
-	border:1px solid #337bc4;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	font-weight:bold;
-	padding:12px 44px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #528ecc;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
-	background-color:#378de5;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-
 /*---------------------maps----------------/
 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-#map {
-  height: 100%;
-}
 /* Optional: Makes the sample page fill the window. */
-html,
+/*html,
 body {
   height: 100%;
   margin: 0;
@@ -235,4 +212,4 @@ li:nth-child(odd) {
 #more {
   width: 100%;
   margin: 5px 0 0 0;
-}
+}*/
