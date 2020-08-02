@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -20,9 +20,15 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+   
  
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+     <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LwjhghfFcoX5t-2mIPdkRi8CV3jSfxU&callback=initMap&libraries=places&v=weekly"
+      async
+      defer
+    ></script>
+     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
@@ -69,6 +75,7 @@
       </nav>
     </header>
     <section id="section-menu">
+    <h3>Click the buttons to explore your interest</h3>
       <button class="myButton">
         <i class="fas fa-utensils"></i> Food & Drinks
       </button>
@@ -82,11 +89,16 @@
         <i class="fas fa-shopping-bag"></i> Shopping
       </button>
       <button class="myButton"><i class="fas fa-city"></i> Everything</button>
-      <div id="map"></div>
-     
-      
+        <div id="map"></div>
+        <div id="right-panel">
+            <h2>Results</h2>
+            <ul id="places"></ul>
+            <button id="more">More results</button>
+        </div>
+   
+    
     </section>
-  
+   
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -103,12 +115,31 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/js/maps.js"></script>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+   
+    
+    <script src="assets/js/places.js"></script>
+  </body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Place Search Pagination</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LwjhghfFcoX5t-2mIPdkRi8CV3jSfxU&callback=initMap&libraries=places&v=weekly"
-      async
       defer
     ></script>
+    <link rel="stylesheet" href="assets/css/mapstyle.css">
+   
+  <script src="assets/js/places.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="right-panel">
+      <h2>Results</h2>
+      <ul id="places"></ul>
+      <button id="more">More results</button>
+    </div>
   </body>
 </html>
