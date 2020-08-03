@@ -74,25 +74,25 @@
     </header>
     <section id="section-menu">
       
-      <form style="color:#fff;margin-top:55px;padding:3%">
+      <form name="choice" style="color:#fff;margin-top:55px;padding:3%;">
       <p>Please select your choice:</p>
         <input type="radio" id="food" name="choice" value="cafe">
         <label for="food">Food & Drink</label>
-        <input type="radio" id="history" name="choice" value="Museum">
+        <input type="radio" id="history" name="choice" value="museum">
         <label for="history">Culture & History</label>
         <input type="radio" id="attractions" name="choice" value="tourist_attractions">
         <label for="attractions">Tourist Attractions</label>
         <input type="radio" id="shopping" name="choice" value="store">
         <label for="shopping">Shopping</label>
-        <input type="radio" id="all" name="explore-choice" value="all">
-        <label for="all">Everything</label>
-    </form>
+        <input type="radio" id="art" name="choice" value="art_gallery">
+        <label for="all">Art Gallery</label>
+           </form>
     <div class="row">
         <div class="col-xs-sm-6">
              <div id="map" style="  top: 0px;"></div>
         </div>
         <div class="col-xs-sm-6">
-            <div id="right-panel">
+            <div id="right-panel" /*style="display:none"*/>
                 <h2>Results</h2>
                 <ul id="places"></ul>
             </div>
