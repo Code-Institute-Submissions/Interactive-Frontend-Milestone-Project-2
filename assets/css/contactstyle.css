@@ -36,7 +36,9 @@ input[type="submit"]:hover {
   background-color: #051630;
 }
 
-
+label{
+    color:#fff;
+  }
 .contact-Heading{
     padding-top:0px;
     margin-top: 0px;
@@ -65,7 +67,3 @@ input[type="submit"]:hover {
 }
 
 
-label{
-    color:#fff;
-   
-}
