@@ -1,4 +1,4 @@
-function initMap() {
+/*function initMap() {
         // Create the map.
         const pyrmont = {
           lat: 59.32,
@@ -54,6 +54,41 @@ function initMap() {
         }
 
         map.fitBounds(bounds);
-      }
+      }*/
 
+      let service;
+let pyrmont;
+let map;
+function initMap() {
+  // Create the map.
+   pyrmont = { lat: 59.32,lng: 18.06};
+   map = new google.maps.Map(document.getElementById("map"), {
+    center: pyrmont,
+    zoom: 17
+  });
+  // Create the places service.
+  service = new google.maps.places.PlacesService(map);
+  let getNextPage;
+
+  // Perform a nearby search.
+
+  
+  const selectElement = document.querySelectorAll('input[name="choice"]');
+  if (selectElement.checked) {
+    let loctype = selectElement.value;
+    console.log(loctype);
+    ns(loctype);
+}
+
+}
+function ns(loctype) {
+  service.nearbySearch(
+    { location: pyrmont, radius: 500, type: loctype },
+    (results, status, pagination) => {
+      if (status !== "OK") return;
+      createMarkers(results, map);
+      
+    }
+  );
+}
 
