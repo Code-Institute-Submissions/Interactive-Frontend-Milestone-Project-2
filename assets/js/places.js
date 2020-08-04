@@ -62,6 +62,7 @@ let map;
 const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let labelIndex = 0;
 let markers = [];
+let placesList = [];
 
 function initMap() {
   // Create the map.
@@ -72,7 +73,6 @@ function initMap() {
   });
   // Create the places service.
   service = new google.maps.places.PlacesService(map);
-  let getNextPage;
 
   // Perform a nearby search.
   var choices = document.forms["choice"].elements["choice"];
@@ -87,17 +87,25 @@ function ns(loctype) {
     { location: pyrmont, radius: 3500, type: loctype },
     (results, status, pagination) => {
       if (status !== "OK") return;
+      console.log("results"+results);
+      
       createMarkers(results, map);
     }
   );
 }
 
 function createMarkers(places, map) {
+  console.log(placesList);
+  if (placesList === undefined || placesList.length === 0) {
+    //placesList = document.getElementById("places");
+    console.log("insideif");
+  } else {
+    placesList = [];
+    console.log("insideelse" + placesList);
+  }
   const bounds = new google.maps.LatLngBounds();
-  const placesList = document.getElementById("places");
-  clearMarkers();
- 
 
+  clearMarkers();
   for (let i = 0, place; (place = places[i]); i++) {
     /*const image = {
       url: place.icon,
@@ -114,11 +122,20 @@ function createMarkers(places, map) {
       position: place.geometry.location,
     });
     markers.push(marker);
-    const li = document.createElement("li");
-    li.textContent = place.name;
-    placesList.appendChild(li);
+    console.log("placeList"+placesList);
+    placesList.push(place.name);
+
+    /* li.textContent = place.name;
+    placesList.appendChild(li);*/
     bounds.extend(place.geometry.location);
   }
+  placesList.forEach(function (item) {
+    const li = document.createElement("li");
+    var text = document.createTextNode(item);
+    li.appendChild(text);
+    document.getElementById("places").appendChild(li);
+  });
+
   map.fitBounds(bounds);
 }
 
@@ -128,7 +145,7 @@ function setMapOnAll(map) {
   }
 }
 
-
 function clearMarkers() {
   setMapOnAll(null);
+  document.getElementById("places").innerHTML="";
 }
