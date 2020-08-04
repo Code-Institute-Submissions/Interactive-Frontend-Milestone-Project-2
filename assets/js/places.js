@@ -8,12 +8,10 @@
           center: pyrmont,
           zoom: 15
         }); // Create the places service.
-
         const service = new google.maps.places.PlacesService(map);
         let getNextPage;
         
         // Perform a nearby search.
-
         service.nearbySearch(
           {
             location: pyrmont,
@@ -24,15 +22,12 @@
             if (status !== "OK") return;
             createMarkers(results, map);
          
-
           }
         );
       }
-
       function createMarkers(places, map) {
         const bounds = new google.maps.LatLngBounds();
         const placesList = document.getElementById("places");
-
         for (let i = 0, place; (place = places[i]); i++) {
           const image = {
             url: place.icon,
@@ -52,7 +47,6 @@
           placesList.appendChild(li);
           bounds.extend(place.geometry.location);
         }
-
         map.fitBounds(bounds);
       }*/
 
@@ -71,6 +65,7 @@ function initMap() {
     center: pyrmont,
     zoom: 12,
   });
+  google.maps.event.addDomListener(window, "load", initMap);
   // Create the places service.
   service = new google.maps.places.PlacesService(map);
 
@@ -149,3 +144,22 @@ function clearMarkers() {
   setMapOnAll(null);
   document.getElementById("places").innerHTML="";
 }
+
+/*var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    /*this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+   /* var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}*/

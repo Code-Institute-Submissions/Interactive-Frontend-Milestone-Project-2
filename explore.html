@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>-->
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -21,12 +21,12 @@
       crossorigin="anonymous"
     />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-     <script
+    <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LwjhghfFcoX5t-2mIPdkRi8CV3jSfxU&callback=initMap&libraries=places&v=weekly"
       async
       defer
     ></script>
-     <link href="assets/css/mapstyle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/mapstyle.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
@@ -73,31 +73,34 @@
       </nav>
     </header>
     <section id="section-menu">
-      
-      <form name="choice" style="color:#fff;margin-top:55px;padding:3%;">
-      <p>Please select your choice:</p>
-        <input type="radio" id="food" name="choice" value="cafe">
-        <label for="food">Food & Drink</label>
-        <input type="radio" id="history" name="choice" value="museum">
-        <label for="history">Culture & History</label>
-        <input type="radio" id="shopping" name="choice" value="store">
-        <label for="shopping">Shopping</label>
-        <input type="radio" id="art" name="choice" value="art_gallery">
-        <label for="art">Art Gallery</label>
-           </form>
-    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-left">
-             <div id="map" style="  top: 0px;"></div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-right">
-            <div id="right-panel">
-                <h2>Results</h2>
-                <ul id="places"></ul>
+      <div class="forminput">
+        <form name="choice" style="color: #fff; margin-top: 55px; padding: 3%;">
+          <p>Please select your choice:</p>
+          <input type="radio" id="food" name="choice" value="cafe" />
+          <label for="food">Food & Drink</label>
+          <input type="radio" id="history" name="choice" value="museum" />
+          <label for="history">Culture & History</label>
+          <input type="radio" id="shopping" name="choice" value="store" />
+          <label for="shopping">Shopping</label>
+          <input type="radio" id="art" name="choice" value="art_gallery" />
+          <label for="art">Art Gallery</label>
+        </form>
+      </div>
+
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-left">
+            <div id="map" style="top: 0px;"></div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-right">
+            <!--<button class="accordion">Result</button>-->
+            <div class="panel">
+                <h2>List of places</h2>
+              <ul id="places"></ul>
             </div>
+          </div>
         </div>
-    </div>    
+
     </section>
-   
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -114,7 +117,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-   
+
     <script src="assets/js/places.js"></script>
   </body>
 </html>

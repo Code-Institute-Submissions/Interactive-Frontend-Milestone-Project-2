@@ -17,20 +17,11 @@ html,body
   overflow: hidden;
 }
 
-/*#cover-image {
-  height: 600px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background: url(../images/St1.jpg) no-repeat center center;
-  padding: 0;
-  margin: 0;
-}*/
 #cover-text {
   font-size: 110%;
   font-family: lato;
   color: #ffffff;
-  background-color: rgba(38, 157, 236, 0.7);
+  background-color: rgba(14, 14, 14, 1);
   padding: 20 50 30 15;
   letter-spacing: 1px;
   position: absolute;
