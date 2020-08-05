@@ -1,55 +1,3 @@
-/*function initMap() {
-        // Create the map.
-        const pyrmont = {
-          lat: 59.32,
-          lng: 18.06
-        };
-        const map = new google.maps.Map(document.getElementById("map"), {
-          center: pyrmont,
-          zoom: 15
-        }); // Create the places service.
-        const service = new google.maps.places.PlacesService(map);
-        let getNextPage;
-        
-        // Perform a nearby search.
-        service.nearbySearch(
-          {
-            location: pyrmont,
-            radius: 3500,
-            type:"cafe"
-          },
-          (results, status, pagination) => {
-            if (status !== "OK") return;
-            createMarkers(results, map);
-         
-          }
-        );
-      }
-      function createMarkers(places, map) {
-        const bounds = new google.maps.LatLngBounds();
-        const placesList = document.getElementById("places");
-        for (let i = 0, place; (place = places[i]); i++) {
-          const image = {
-            url: place.icon,
-            size: new google.maps.Size(71, 71),
-            origin: new google.maps.Point(0, 0),
-            anchor: new google.maps.Point(17, 34),
-            scaledSize: new google.maps.Size(25, 25)
-          };
-          new google.maps.Marker({
-            map,
-            icon: image,
-            title: place.name,
-            position: place.geometry.location
-          });
-          const li = document.createElement("li");
-          li.textContent = place.name;
-          placesList.appendChild(li);
-          bounds.extend(place.geometry.location);
-        }
-        map.fitBounds(bounds);
-      }*/
-
 let service;
 let pyrmont;
 let map;
@@ -82,9 +30,7 @@ function ns(loctype) {
     { location: pyrmont, radius: 3500, type: loctype },
     (results, status, pagination) => {
       if (status !== "OK") return;
-      console.log("results"+results);
-      
-      createMarkers(results, map);
+          createMarkers(results, map);
     }
   );
 }
@@ -93,35 +39,24 @@ function createMarkers(places, map) {
   console.log(placesList);
   if (placesList === undefined || placesList.length === 0) {
     //placesList = document.getElementById("places");
-    console.log("insideif");
+   // console.log("insideif");
   } else {
     placesList = [];
-    console.log("insideelse" + placesList);
+    //console.log("insideelse" + placesList);
   }
   const bounds = new google.maps.LatLngBounds();
 
   clearMarkers();
   for (let i = 0, place; (place = places[i]); i++) {
-    /*const image = {
-      url: place.icon,
-      size: new google.maps.Size(71, 71),
-      origin: new google.maps.Point(0, 0),
-      anchor: new google.maps.Point(17, 34),
-      scaledSize: new google.maps.Size(25, 25)
-    };*/
     let marker = new google.maps.Marker({
       map,
-      //icon: image,
-      label: labels[labelIndex++ % labels.length],
+       label: labels[labelIndex++ % labels.length],
       title: place.name,
       position: place.geometry.location,
     });
     markers.push(marker);
-    console.log("placeList"+placesList);
+   // console.log("placeList"+placesList);
     placesList.push(place.name);
-
-    /* li.textContent = place.name;
-    placesList.appendChild(li);*/
     bounds.extend(place.geometry.location);
   }
   placesList.forEach(function (item) {
@@ -144,22 +79,3 @@ function clearMarkers() {
   setMapOnAll(null);
   document.getElementById("places").innerHTML="";
 }
-
-/*var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    /*this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-   /* var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}*/
