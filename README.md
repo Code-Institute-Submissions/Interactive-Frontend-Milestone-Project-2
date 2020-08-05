@@ -120,10 +120,10 @@ The webpage is supportive to different browsers and screen-sizes. Different Scre
 * Fixed the list of places adding upon after everyclick without the list clearing itself.
 ## Deployment
 
-The steps to deploy the project.
+The steps to deploy the project locally.
 
 * Download the files form the Git respository.
-* Downlaod option will get the zip folder of the repo.
+* Download option will get the zip folder of the repo.
 * Extract the zip folder of your choice.
 * Run the index.HTML in your browser.
 

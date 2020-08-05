@@ -6,7 +6,7 @@ function sendMail(contactForm) {
     },"user_5KExuU3XUBpBZd0ZMo3JQ")
     .then(
         function(response) {
-            console.log("SUCCESS", response);
+            alert("Your Message has been sent!!");
         },
         function(error) {
             console.log("FAILED", error);
