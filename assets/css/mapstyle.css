@@ -45,9 +45,9 @@ li {
   overflow: hidden;
 }
 
-li:nth-child(odd) {
+/*li:nth-child(odd) {
   background-color: #fcfcfc;
-}
+}*/
 
 input {
     color:#fff;
@@ -64,4 +64,32 @@ form{
         min-height:100%;
     }
 
+}
+/*Footer Styling*/
+
+footer {
+  height: 50px;
+ background-color: #1a1d1f;
+    padding: 15px;
+}
+
+#div-footer {
+  height: 100%;
+}
+
+.social-networks {
+  text-align: center;
+}
+
+.social-networks li {
+  display: inline;
+}
+
+.social-networks i {
+  font-size: 180%;
+  padding-right: 11%;
+  color: #777777;
+}
+.li-icon{
+    background-color: #1a1d1f;
 }

@@ -17,15 +17,16 @@ function initMap() {
   // Create the places service.
   service = new google.maps.places.PlacesService(map);
 
-  // Perform a nearby search.
+ searchPlaces("cafe");
   var choices = document.forms["choice"].elements["choice"];
   for (var i = 0, max = choices.length; i < max; i++) {
     choices[i].onclick = function () {
-      ns(this.value);
+      searchPlaces(this.value);
     };
   }
 }
-function ns(loctype) {
+// perform search
+function searchPlaces(loctype) {
   service.nearbySearch(
     { location: pyrmont, radius: 3500, type: loctype },
     (results, status, pagination) => {
@@ -36,14 +37,10 @@ function ns(loctype) {
 }
 
 function createMarkers(places, map) {
-  console.log(placesList);
-  if (placesList === undefined || placesList.length === 0) {
-    //placesList = document.getElementById("places");
-   // console.log("insideif");
-  } else {
-    placesList = [];
-    //console.log("insideelse" + placesList);
-  }
+
+  if (placesList !== undefined || placesList.length !== 0) {
+      placesList = [];
+    }
   const bounds = new google.maps.LatLngBounds();
 
   clearMarkers();
@@ -55,7 +52,7 @@ function createMarkers(places, map) {
       position: place.geometry.location,
     });
     markers.push(marker);
-   // console.log("placeList"+placesList);
+  
     placesList.push(place.name);
     bounds.extend(place.geometry.location);
   }
@@ -64,7 +61,7 @@ function createMarkers(places, map) {
     var text = document.createTextNode(item);
     li.appendChild(text);
     document.getElementById("places").appendChild(li);
-  });
+ });
 
   map.fitBounds(bounds);
 }

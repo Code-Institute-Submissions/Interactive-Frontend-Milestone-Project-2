@@ -20,7 +20,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    
+
     <link href="assets/css/mapstyle.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -71,7 +71,13 @@
       <div class="forminput">
         <form name="choice" style="color: #fff; margin-top: 55px; padding: 3%;">
           <p>Please select your choice:</p>
-          <input type="radio" id="food" name="choice" value="cafe" />
+          <input
+            type="radio"
+            id="food"
+            name="choice"
+            value="cafe"
+            checked="checked"
+          />
           <label for="food">Food & Drink</label>
           <input type="radio" id="history" name="choice" value="museum" />
           <label for="history">Culture & History</label>
@@ -87,7 +93,6 @@
           <div id="map" style="top: 0px;"></div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-right">
-          <!--<button class="accordion">Result</button>-->
           <div class="panel">
             <h2>List of places</h2>
             <ul id="places"></ul>
@@ -95,6 +100,22 @@
         </div>
       </div>
     </section>
+    <footer class="fixed-bottom">
+		<ul class="social-networks">
+			<li class="li-icon">
+				<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+			</li>
+			<li class="li-icon">
+				<a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+			</li>
+			<li class="li-icon">
+				<a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+			</li>
+			<li class="li-icon">
+				<a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+			</li>
+		</ul>
+	</footer>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

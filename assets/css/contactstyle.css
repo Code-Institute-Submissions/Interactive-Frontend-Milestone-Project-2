@@ -68,5 +68,29 @@ label{
         font-size: 1em;
     }
 }
+/*Footer Styling*/
 
+footer {
+  height: 50px;
+      background-color: #1a1d1f;
+    padding: 15px;
+}
+
+#div-footer {
+  height: 100%;
+}
+
+.social-networks {
+  text-align: center;
+}
+
+.social-networks li {
+  display: inline;
+}
+
+.social-networks i {
+  font-size: 180%;
+  padding-right: 11%;
+  color: #777777;
+}
 
