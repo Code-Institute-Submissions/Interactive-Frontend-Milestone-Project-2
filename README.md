@@ -17,11 +17,18 @@ A user who wish to explore Stockholm can plan their own tours by exploring our w
 ### Existing Features
 * Header allows users to see the company name and also to navigate to different pages of Stockholm Tours.
 * Home page shows the real-time weather with the weather condition background on the weather display.
-* Explore page shows the popular places in Stockholm based the User selections marked in the Google maps and also listed in a list. 
+* Explore page shows the popular places in Stockholm based the User selections marked in the Google maps and also listed in a list.
+* Explore page shows some facts of Sweden listed in a box.
+* EXplore page shows image scrol of popular places in sweden. 
 * Contact page allows the user to share queries and feedback to the admin.
 * Admin gets an email through EmailJs.com that the user sends through Contact form.
+* Footer Section - displays all the social media network of this webpage.
 ### Features left to Implement
 * Make this webpage available for entire Sweden.
+* Make this website support tour bookings.
+* Make this website suport Bike hiring.
+* Make this website support hotel bookings.
+
 ## Technologies used
 ### List of Technologies used
 1. Javascript
@@ -32,6 +39,8 @@ A user who wish to explore Stockholm can plan their own tours by exploring our w
 6. Gitpod
 7. Github
 8. Widgets
+9. Google places library
+10. Emailjs
 ## Best Practices
 * Hex code is used throughout the project.
 * Code has been checked in the https://validator.w3.org/
@@ -85,35 +94,53 @@ The webpage is supportive to different browsers and screen-sizes. Different Scre
 2. User should be able to see the weather condition as the background of the weather forecast.
 3. User should be able to view a short introduction on Stockholm.
 4. User should be able to see a menu bar on this page.
+5. User should be able to view footer and header in this page.
+
 #### Test Cases for Mobile view
 1. User should be able to view the real-time weather forecast of Stockholm.
 2. User should be able to see the weather condition as the background of the weather forecast.
 3. User should be able to view a short introduction on Stockholm.
 4. User should be able to see a Menu bar collapsed on this page.
+5. User should be able to view footer and  collapsed header Menu in this page.
 ### Explore Page
 #### Test Cases for Desktop view
 1. User should be able to view the menu bar. 
 2. User should be able to see and click radio buttons to pick their option.
 3. User should be able to view a google map of Stockholm.
-4. User should be able to view places marked in alphabets on google maps after clicking the radio button.
-5. User should be able to view list of places and map side by side.
+4. User should be able to view list of cafes in stockholm when he clicks the cafe option button.
+5. User should be able to view list of historic places in stockholm when selected the Culture and Histroy option.
+6. User should be able to View list of shopping places in stockholm when selected the Shopping option.
+7. User should be able to View list of Art Galleries in stockholm when selected the Art Gallery  option.
+8. User should be able to view places marked in alphabets on google maps after clicking the radio button.
+9. User should be able to view list of places and map side by side.
+10. User should be able to see list of facts and image scroll of stockholm pictures side by side.
+11. User should be able to see the footer.
 #### Test Cases for Mobile view
 1. User should be able to view the menu bar. 
 2. User should be able to see and click radio buttons to pick their option.
 3. User should be able to view a google map of Stockholm.
-4. User should be able to view places marked in alphabets on google maps after clicking the radio button.
-5. User should be able to view map and list of places one below the other.
+4. User should be able to view list of cafes in stockholm when he clicks the cafe option button.
+5. User should be able to view list of historic places in stockholm when selected the Culture and Histroy option.
+6. User should be able to View list of shopping places in stockholm when selected the Shopping option.
+7. User should be able to View list of Art Galleries in stockholm when selected the Art Gallery  option.
+8. User should be able to view places marked in alphabets on google maps after clicking the radio button.
+9. User should be able to view list of places and map side by side.
+10. User should be able to see list of facts and image scroll of stockholm pictures side by side.
+11. User should be able to see the footer.
+
 ### Contact Page
 #### Test Cases for Desktop view
 1. User must be able to view a contact form with Name , Email and Message label and textbox.
 2. Try to submit the empty form and verify that an error message about the required fields (Name,Email) appears
 3. Try to submit the form with an invalid email address and verify that a relevant error message appears.
 4. When user sends the feedback /query the admin must receive the same via email.
+5. User should be able to view header and footer.
 #### Test Cases for Mobile view
 1. User must be able to view a contact form with Name , Email and Message label and textbox.
 2. Try to submit the empty form and verify that an error message about the required fields (Name,Email) appears
 3. Try to submit the form with an invalid email address and verify that a relevant error message appears.
 4. When user sends the feedback /query the admin must receive the same via email.
+5. User should be able to view header and footer.  
 
 ## Fixed Issues
 * Fixed the google map marker api too customize the marker.
@@ -127,8 +154,7 @@ The steps to deploy the project locally.
 * Extract the zip folder of your choice.
 * Run the index.HTML in your browser.
 
-Developer deploys the project by
-
+Deployment via Gitpod.
 * In Gitpod,type:python3 -m http.server in the terminal and press enter.
 * List of open ports will be listed.
 * Choose port -8000 and cick Open Browser.
