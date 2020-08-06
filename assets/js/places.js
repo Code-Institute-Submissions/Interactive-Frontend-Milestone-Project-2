@@ -25,7 +25,7 @@ function initMap() {
     };
   }
 }
-// perform search
+// Perform a nearby search.
 function searchPlaces(loctype) {
   service.nearbySearch(
     { location: pyrmont, radius: 3500, type: loctype },
@@ -36,6 +36,7 @@ function searchPlaces(loctype) {
   );
 }
 
+// Create markers on the maps for the places as result of above function.
 function createMarkers(places, map) {
 
   if (placesList !== undefined || placesList.length !== 0) {
@@ -72,22 +73,11 @@ function setMapOnAll(map) {
   }
 }
 
+// Clears the markers on the map and the places list.
+
 function clearMarkers() {
   setMapOnAll(null);
   document.getElementById("places").innerHTML="";
 }
-/* scroll-text format*/
-/*var slideIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none"; 
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1} 
-  x[slideIndex-1].style.display = "block"; 
-  setTimeout(carousel, 2000); 
-}*/
+  
