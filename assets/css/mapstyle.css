@@ -1,42 +1,44 @@
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    background: url(../images/P2.jpg) no-repeat center center;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background: url(../images/P2.jpg) no-repeat center center;
 }
-    
-   #map {
-        height:400px;
-        width:100%;
-         }
-.row{
-    padding-top:17px;
+
+#map {
+  height: 400px;
+  width: 100%;
 }
+
+.row {
+  padding-top: 17px;
+}
+
 h2 {
   font-size: 22px;
   text-decoration: underline;
   margin: 0 0 5px 0;
-   /*background-color: #f1f1f1;*/
+  /*background-color: #f1f1f1;*/
   color: antiquewhite;
 }
- .title{
-   background-color: #8261782b;
-    border-radius: 5px;
-    width: 90%;
-    margin-top: 25px;
-    margin-left: 19px;
-    color: antiquewhite;
- }
+
+.title {
+  background-color: #8261782b;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 25px;
+  margin-left: 19px;
+  color: antiquewhite;
+}
+
 .panel {
-    border: 1px solid white;
+  border: 1px solid white;
   /*width: fit-content;*/
-      
- /*background-color: #f1f1f1;*/
+  /*background-color: #f1f1f1;*/
   overflow: hidden;
-      
 }
 
 ul {
@@ -46,61 +48,57 @@ ul {
   height: 350px;
   width: 95%;
   overflow-y: auto;
-    border: 1px solid antiquewhite;
- }
-
+  border: 1px solid antiquewhite;
+}
 
 #places {
   list-style-type: none;
   padding: 0;
   margin: 0;
- height: 368px;
+  height: 368px;
   width: 103%;
   overflow-y: auto;
-  
-
 }
 
 li {
- background-color: #804a4a0a;
-      color: antiquewhite;
+  background-color: #804a4a0a;
+  color: antiquewhite;
   padding: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
-/*li:nth-child(odd) {
-  background-color: #fcfcfc;
-}*/
-
 input {
-    color:#fff;
-    margin: .4rem;
+  color: #fff;
+  margin: .4rem;
 }
-form{
-    color:#fff;
-    margin-top:10%;
-    background-color:#32566dab;
 
+form {
+  color: #fff;
+  margin-top: 10%;
+  background-color: #32566dab;
 }
- .div-image{
-      margin-bottom: 67px;
-      /*margin-right: 20px;*/
-  }
+
+.div-image {
+  margin-bottom: 67px;
+ }
+
 @media screen and (max-width: 600px) {
-    #map{
-        min-height:100%;
-    }
-    .panel{
-        margin-top:25px;
-    }
-
+  #map {
+    min-height: 100%;
+  }
+  .panel {
+    margin-top: 25px;
+  }
 }
+
+
 /*Image Scroll*/
+
 .img-home {
   width: 100%;
-  height:400px;
+  height: 400px;
   background-image: url("../images/P2.jpg");
   display: inline-block;
   position: relative;
@@ -111,7 +109,7 @@ form{
 
 @keyframes slider {
   0% {
-    background-image: url("../images/st2.jpg");
+    background-image: url("../images/NorthernLights.jpg");
   }
   25% {
     background-image: url("../images/psmall.jpg");
@@ -120,29 +118,29 @@ form{
     background-image: url("../images/Nature.jpg");
   }
   75% {
-    background-image: url("../images/Flag.jpg");
+    background-image: url("../images/Winter.jpg");
   }
 }
 
 @media screen and (max-width: 943px) {
   .img-home {
-      height: 354px;
+    height: 354px;
     margin: 17px;
-        width: 90%;
+    width: 90%;
     /*margin-bottom: 25px;*/
   }
-  .div-image{
-      margin-bottom: 67px;
-      margin-right: 20px;
+  .div-image {
+    margin-bottom: 67px;
+    margin-right: 20px;
   }
   footer {
-  height: 50px;
- background-color: #1a1d1f;
+    height: 50px;
+    background-color: #1a1d1f;
     padding: 10px;
-}
+  }
 }
 
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .row {
     height: auto;
   }
@@ -151,17 +149,19 @@ form{
     width: 55%;
   }
   footer {
-  height: 50px;
- background-color: #1a1d1f;
+    height: 50px;
+    background-color: #1a1d1f;
     padding: 10px;
+  }
 }
-}
+
+
 /*Footer Styling*/
 
 footer {
   height: 50px;
- background-color: #1a1d1f;
-    padding: 15px;
+  background-color: #1a1d1f;
+  padding: 15px;
 }
 
 #div-footer {
@@ -170,14 +170,13 @@ footer {
 
 .social-networks {
   text-align: center;
-   list-style-type: none;
+  list-style-type: none;
   padding: 0;
   margin-left: 10px;
   height: 350px;
   width: 95%;
   overflow-y: auto;
-  border:none;
-    
+  border: none;
 }
 
 .social-networks li {
@@ -189,6 +188,7 @@ footer {
   padding-right: 11%;
   color: #777777;
 }
-.li-icon{
-    background-color: #1a1d1f;
+
+.li-icon {
+  background-color: #1a1d1f;
 }
