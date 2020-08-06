@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Stockholm Tour</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
 
-    <link href="assets/css/mapstyle.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header>
-      <nav
-        class="navbar fixed-top navbar-expand-md navbar-dark bg-dark"
-        style="background-color: #e3f2fd;"
-      >
-        <div class="navbar-toggler-right">
-          <button
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Stockholm Tour</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+	<link href="assets/css/mapstyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>
+		<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" style="background-color: #e3f2fd;">
+			<div class="navbar-toggler-right">
+				<button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -40,67 +29,86 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
-        <a class="navbar-brand text-center" href="index.html">
-          <span>Expore Stockholm</span>
-        </a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <nav
-            class="nav d-flex flex-column flex-md-row w-100 justify-content-end"
-          >
-            <a
-              class="flex-fill text-center text-light nav-link active"
-              href="index.html"
-              >Home</a
-            >
-            <a
-              class="flex-fill text-center text-light nav-link"
-              href="explore.html"
-              >Explore</a
-            >
-            <a
-              class="flex-fill text-center text-light nav-link"
-              href="contact.html"
-              >Contact</a
-            >
-          </nav>
-        </div>
-      </nav>
-    </header>
-    <section id="section-menu">
-      <div class="forminput">
-        <form name="choice" style="color: #fff; margin-top: 55px; padding: 3%;">
-          <p>Please select your choice:</p>
-          <input
+			</div>
+			<a class="navbar-brand text-center" href="index.html">
+				<span>Expore Stockholm</span>
+			</a>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<nav class="nav d-flex flex-column flex-md-row w-100 justify-content-end">
+					<a class="flex-fill text-center text-light nav-link active" href="index.html">Home</a>
+					<a class="flex-fill text-center text-light nav-link" href="explore.html">Explore</a>
+					<a class="flex-fill text-center text-light nav-link" href="contact.html">Contact</a>
+				</nav>
+			</div>
+		</nav>
+	</header>
+	<section id="section-menu">
+		<div class="forminput">
+			<form name="choice" style="color: #fff; margin-top: 45px; padding: 1%;">
+				<p>Please select your choice:</p>
+				<input
             type="radio"
             id="food"
             name="choice"
             value="cafe"
             checked="checked"
           />
-          <label for="food">Food & Drink</label>
-          <input type="radio" id="history" name="choice" value="museum" />
-          <label for="history">Culture & History</label>
-          <input type="radio" id="shopping" name="choice" value="store" />
-          <label for="shopping">Shopping</label>
-          <input type="radio" id="art" name="choice" value="art_gallery" />
-          <label for="art">Art Gallery</label>
-        </form>
-      </div>
+				<label for="food">Food & Drink</label>
+				<input type="radio" id="history" name="choice" value="museum" />
+				<label for="history">Culture & History</label>
+				<input type="radio" id="shopping" name="choice" value="store" />
+				<label for="shopping">Shopping</label>
+				<input type="radio" id="art" name="choice" value="art_gallery" />
+				<label for="art">Art Gallery</label>
+			</form>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 pull-left">
+					<div id="map" style="top: 0px;"></div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pull-right">
+					<div class="panel">
+						<h2>List of places</h2>
+						<ul id="places"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h2 class="title">Interesting Facts about Sweden</h2>
+		<div class="row">
+			<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 div-image" style="margin-bottom:67px;">
+				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 pull-right img-home" id="imgscroll"></div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pull-right">
+					<ul>
+						<li>Swedes consume 20 million “Semlor” per year.</li>
+						<li>More than 20 000 Sami people live in Sweden.</li>
+						<li>
+							Swedes work an average of 1611 hours per year.
+						</li>
+						<li>86% of the Swedes live in cities.</li>
+						<li>Swedes have 480 paid parental days.</li>
+						<li>52% of the energy is renewable.</li>
+						<li>
+							Gay Relationships have been legalized since 1944.
+						</li>
+						<li>There are 95 700 lakes in the country.</li>
+						<li>
+							Guadeloupe used to belong to Sweden (1813-1814).
+						</li>
+						<li>99% of Sweden’s waste is recycled</li>
+					</ul>
+				</div>
+			</div>
+	</section>
 
-      <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-left">
-          <div id="map" style="top: 0px;"></div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-right">
-          <div class="panel">
-            <h2>List of places</h2>
-            <ul id="places"></ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="fixed-bottom">
+	<div>
+
+		
+	</div>
+
+
+	<footer class="fixed-bottom">
 		<ul class="social-networks">
 			<li class="li-icon">
 				<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -117,28 +125,21 @@
 		</ul>
 	</footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
 
-    <script src="assets/js/places.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LwjhghfFcoX5t-2mIPdkRi8CV3jSfxU&callback=initMap&libraries=places&v=weekly"
-      async
-      defer
-    ></script>
-  </body>
+	<script src="assets/js/places.js"></script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LwjhghfFcoX5t-2mIPdkRi8CV3jSfxU&callback=initMap&libraries=places&v=weekly"
+		async defer></script>
+</body>
+
 </html>
