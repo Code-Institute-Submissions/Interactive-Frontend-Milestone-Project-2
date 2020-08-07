@@ -6,7 +6,7 @@ This webpage is to assist a user who wish explore Sweden's Capital city **"Stock
  The color and fonts have been selected to suit the agenda of the website. Aimed at having colors and font that are pleasant,clear and readabl for the users to explore information in our website. 
  ## UX Design
 
- The initial idea of the website and its ux Design has been created in Wireframe. Click here[] to view the desktop and mobile view.
+ The initial idea of the website and its ux Design has been created in Wireframe. Click here[https://github.com/Vanitha-krishnan/Interactive-Frontend-Milestone-Project-2/blob/master/wireframe/Wireframe%20for%20Stockholm-tours.png] to view the desktop and mobile view.
  ### User Stories
 
 A user who wish to explore Stockholm can plan their own tours by exploring our website.
